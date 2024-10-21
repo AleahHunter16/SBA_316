@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T&Js Towing Booking Site</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>T&Js Towing</h1>
+    </header>
+    <main>
+        <form id="bookingForm">
+            <label for="Name">Name:</label>
+            <input type="text" id="name" required>
+            <span class="Error hidden" id="NameError">Name is required.</span>
+            <br>
+            <label for="location">Location</label>
+            <br>
+            <button type="Submit">Book our Tow Truck NOW!</button>
+        </form>
+        <div id="confirmation" class="hidden">
+            <h2>Booking Confirmation</h2>
+            <p id="ConfirmationMessage"></p>
+            <button id="newBooking">BookOurTruck!</button>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
